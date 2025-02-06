@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+/* Form Container */
+#requestForm {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 1rem; /* Spacing between elements */
+    max-width: 600px; /* Limit width of the form */
+    margin: auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Inputs */
+input, select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Focused input states */
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Invalid state styling */
+textarea:required:invalid, input:required:invalid {
+    border: 0.15rem solid red;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* API Response Container */
+.response {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Aesthetic Adjustments for Textareas */
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Adjusts appearance of the page */
+h1, p {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}

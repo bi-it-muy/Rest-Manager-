@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <h2>API Request Generator</h2>
+    <p>Fill out the form below to send a request to the API.</p>
+
+    <!-- Form to collect the API URL, headers, and body -->
+    <section>
+    <form id="requestForm">
+        <label for="url">API URL:</label>
+        <input type="text" id="url" name="url" required>
+
+        <!-- New Method Selection Dropdown -->
+        <label for="method">Request Method:</label>
+        <select id="method" name="method">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+        </select>
+
+        <label for="headers">Custom Headers (Optional):</label>
+        <textarea id="headers" name="headers" placeholder="Enter any custom headers in JSON format"></textarea>
+
+        <label for="requestBody">Request Body (JSON format):</label>
+        <textarea id="requestBody" name="requestBody"></textarea>
+
+        <label for="contentType">Content Type:</label>
+        <select id="contentType" name="contentType">
+            <option value="application/json">application/json</option>
+            <option value="application/xml">application/xml</option>
+        </select>
+
+        <label for="acceptType">Accept Type:</label>
+        <select id="acceptType" name="acceptType">
+            <option value="application/json">application/json</option>
+            <option value="application/xml">application/xml</option>
+        </select>
+
+        <button type="submit">Send Request</button>
+    </form>
+
+    <div class="response" id="responseContainer">
+        <h3>API Response:</h3>
+        <pre id="responseData"></pre>
+    </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "REST Manager",
+    "version": "0.0.1",
+    "description": "",
+    "permissions": [
+        "contextMenus",
+        "scripting",
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback"
+
+    ],
+    "sidebar_action": {
+        "default_title": "REST Manager",
+        "default_panel": "panel/panel.html",
+        "default_icon": "icons/icon-48.png",
+        "open_at_install":false
+    },
+    "icons": {
+        "48": "icons/icon-48.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "48": "icons/icon-48.png"
+        },
+        "default_title": "Whereami?"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false,
+        "type": "module"
+    }
+  }
